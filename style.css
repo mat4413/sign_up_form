@@ -21,6 +21,7 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  display: flex;
 }
 
 img, picture, video, canvas, svg {
@@ -78,4 +79,23 @@ h1, h2, h3, h4, h5, h6 {
 
 .image-sidebar img {
     width: 20%;
+}
+
+.right-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.group {
+    display: flex;
+} 
+
+.inner-group {
+    display: flex;
+    flex-direction: column;
 }
