@@ -22,7 +22,8 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   display: flex;
-}
+  background-color: rgb(246, 246, 246);
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
 
 img, picture, video, canvas, svg {
   display: block;
@@ -84,18 +85,93 @@ h1, h2, h3, h4, h5, h6 {
 .right-container {
     display: flex;
     flex-direction: column;
+    width: 100%;
+
 }
 
 .container {
     display: flex;
     flex-direction: column;
+    padding: 1rem 0 0 3rem;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.container p {
+    font-weight: 800;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .group {
     display: flex;
+    gap: 4rem;
 } 
 
 .inner-group {
     display: flex;
     flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+label {
+    font-size: 0.9rem;
+}
+
+input {
+    border: 1px solid #E5E7EB;
+    border-radius: 5px;
+    width: 15rem;
+}
+
+.inner-group input:focus {
+    border: 1px solid blue;
+    outline: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+} 
+
+.password input:invalid {
+    border: 1px solid red;
+    outline: none;
+
+}
+
+button {
+    background-color: #484e6d;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+    font-weight: 800;
+    text-decoration: none;
+    padding: 10px 40px;
+    margin-left: 3rem;
+    margin-top: 1.5rem;
+
+}
+
+.log {
+
+    margin-left: 3rem;
+    margin-top: 1.5rem;
+
+}
+
+a {
+    color: #484e6d;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-weight: 900;
+    padding: 3rem;
+    margin-top: 7rem;
+    width: 80ch;
+    font-size: 1.2rem;
+    
 }
